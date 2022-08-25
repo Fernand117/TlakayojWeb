@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UsuarioModelModule } from 'src/app/models/usuario-model/usuario-model.module';
 import Swal from 'sweetalert2';
 
@@ -12,7 +13,9 @@ export class LoginComponent implements OnInit {
 
   public usuariosModel: UsuarioModelModule = new UsuarioModelModule();
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
@@ -27,6 +30,8 @@ export class LoginComponent implements OnInit {
       this.mensaje("Ingrese su contraseña.");
       form.resetForm();
     }
+
+    this.router.navigateByUrl('/panel');
   }
 
   mensaje(mensaje: string) {
