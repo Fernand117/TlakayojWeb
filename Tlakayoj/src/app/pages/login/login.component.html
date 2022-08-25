@@ -1,1 +1,16 @@
-<p>login works!</p>
+<div class="contenedor">
+    <div class="formulario">
+        <div class="formHead">
+            <img src="../../../assets/logo.png" alt="Logo Tlakayoj" class="img img-logo">
+            <p>Acercando los servicios de salud a los pueblos índigenas.</p>
+        </div>
+        <div class="formBody">
+            <p>Inicia sesión para continuar</p>
+            <form (ngSubmit)="validarFormulario(form)" #form="ngForm">
+                <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Nombre de usuario" [(ngModel)]="usuariosModel.usuario">
+                <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" [(ngModel)]="usuariosModel.password">
+                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+            </form>
+        </div>
+    </div>
+</div>

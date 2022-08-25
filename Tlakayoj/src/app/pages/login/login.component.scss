@@ -1,0 +1,31 @@
+.contenedor {
+    background-image: url("../../../assets/Background.png");
+    .formulario {
+        width: 50%;
+        height: 100vh;
+        background-color: white;
+        float: right;
+        .formHead {
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+        .formBody {
+            width: 100%;
+            height: auto;
+            padding-top: 5%;
+            padding-left: 20%;
+            padding-right: 20%;
+            p {
+                width: 100%;
+                text-align: center;
+            }
+            .form-control {
+                margin-bottom: 2%;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+}
