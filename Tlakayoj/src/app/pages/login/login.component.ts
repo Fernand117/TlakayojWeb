@@ -24,11 +24,13 @@ export class LoginComponent implements OnInit {
     if (this.usuariosModel.usuario === "") {
       this.mensaje("Ingrese su nombre de usuario");
       form.resetForm();
+      return;
     }
 
     if (this.usuariosModel.password === "") {
       this.mensaje("Ingrese su contraseña.");
       form.resetForm();
+      return;
     }
 
     this.router.navigateByUrl('/panel');
