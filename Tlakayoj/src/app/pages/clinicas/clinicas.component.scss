@@ -1,0 +1,20 @@
+.contenedor {
+    .headContent {
+        width: 85%;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        h2 {
+            float: left;
+        }
+        .btn {
+            float: right;
+        }
+    }
+    .table {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
