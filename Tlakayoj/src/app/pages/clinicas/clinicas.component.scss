@@ -12,9 +12,61 @@
             float: right;
         }
     }
-    .table {
+    .grid-container-element {
         width: 85%;
+        height: 100px;
         margin: 0 auto;
+        margin-bottom: 2%;
+        background: linear-gradient(75deg, #408AC9, #C8DCED);
+        border-radius: 10px;
+    }
+    .cardCont {
+        width: 85%;
+        height: 100%;
+        //background-color: bisque;
+        float: left;
+        padding: 10px;
+        .cardHeader {
+            width: 100%;
+            height: auto;
+            //background-color: brown;
+            color: white;
+            .clinica {
+                font-size: 22px;
+                font-weight: bold;
+            }
+            .rfc {
+                margin-left: 5%;
+            }
+        }
+        .cardBody {
+            width: 100;
+            height: auto;
+            //background-color: rebeccapurple;
+            color: white;
+            .director {
+                margin-left: 5%;
+            }
+        }
+        .cardFooter {
+            width: 100%;
+            height: auto;
+            //background-color: brown;
+            color: white;
+            .telefono {
+                margin-left: 5%;
+            }
+        }
+    }
+    .btnCont {
+        width: 15%;
+        height: 100%;
+        //background-color: brown;
+        float: right;
         text-align: center;
+        img {
+            width: 35px;
+            margin-top: 20%;
+        }
     }
 }
